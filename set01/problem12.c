@@ -57,7 +57,7 @@ Complex add(Complex a, Complex b)
     sum.imaginary=a.imaginary+b.imaginary;
     return sum;
 }
-//sum=sum+1;
+
 
 Complex add_n_complex(int n, Complex c[n])
 {

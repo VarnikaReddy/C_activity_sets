@@ -1,0 +1,33 @@
+all lines starting with hash is processed by preprocesser 
+so its the hash which tells the preprocessee to process the line
+the 'include ' contains the prototypes of the function
+compiler converts c source file to executable
+the input for process is c source file and the output is also c source file
+but the difference is that in input c source there are lines starting with hash 
+but in the output c source file there are no lines starting with hash
+so #include <stdo.h> is a header file
+
+
+what is stdio.h?
+it is a header file containing function prototypes.
+
+what is function prototype?
+consists of return type , formal arguments and the function  
+
+
+what is the use of function prototype?
+used by compiler to check function is pasing right no of parameters , right type of parameters 
+and if return value is assigned to rght type of variable
+
+what is int main()?
+main is a function
+main returns an integer
+main is the starting point of a program 
+
+
+what is printf?
+printf is a standard library function
+printf is used to print a string on the console /terminal/screen/stand output
+
+what does return statement do?
+transfers control from called function to calling function
