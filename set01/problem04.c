@@ -14,9 +14,10 @@ int main()
 
 void input(int *a , int *b)
 {
-    int n;
     printf("enter the number");
-    scanf("%d" , n);
+    scanf("%d" , a);
+    printf("Enter the number: ");
+    scanf("%d,b");
 }
 
 void add(int a , int b , int *sum)
