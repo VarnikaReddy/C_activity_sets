@@ -32,6 +32,6 @@ void output(char *string1, char *string2, int result)
 {
     if(result>0)
     {
-        printf("%s is greater than %s",string1,string2)
+        printf("%s is greater than %s",string1,string2);
     }
 }
