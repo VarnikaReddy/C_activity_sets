@@ -1,0 +1,34 @@
+PS C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets> cd set01
+PS C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01> git add .
+PS C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01> git commit -m "test"
+[main c66adb8] test
+ 3 files changed, 36 insertions(+)
+ create mode 100644 set01/problem05debug.txt
+ create mode 100644 set01/problem05error.txt
+PS C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01> git push
+fatal: unable to access 'https://github.com/VarnikaReddy/C_activity_sets.git/': Could not resolve host: github.com
+PS C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01> gcc problem05.c
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401463
+(gdb) r
+Starting program: C:\Users\Varnika Reddy\Documents\GitHub\C_activity_sets\set01/a.exe
+[New Thread 26724.0x544]
+[New Thread 26724.0x458c]
+
+Breakpoint 1, 0x00401463 in main ()
+(gdb) s
+Single stepping until exit from function main,
+which has no line number information.
