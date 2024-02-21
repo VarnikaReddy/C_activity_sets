@@ -51,6 +51,7 @@ void output(int sum)
 {
     if(sum>0)
     {
+        
         printf("sum of composite numbers is %d",sum);
     }
     else if(sum<=0)
