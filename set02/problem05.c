@@ -24,10 +24,14 @@ int input()
 
 int find_gcd(int a , int b)
 {
-    int gcd;
-    int LCM;
-    gcd=a*b/LCM(a , b);
-    return gcd;
+    int temp;
+    while(b!=0)
+    {
+    temp=b;
+    b=a%b;
+    a=temp;
+    }
+    return a;
 }
 
 void output(int a , int b , int gcd)
