@@ -6,36 +6,35 @@ struct _complex
 };
 typedef struct _complex Complex;
 
-Complex input_complex();
-Complex add_complex(Complex a, Complex b);
+void input_complex(Complex *a,Complex *b);
+void add_complex(Complex a, Complex b,Complex *sum);
 void output(Complex a, Complex b, Complex sum);
 
 int main()
 {
     Complex a , b , sum;
-    a=input_complex();
-    b=input_complex();
-    sum=add_complex(a,b);
+    input_complex(&a,&b);
+    add_complex(a,b,&sum);
     output(a,b,sum);
     return 0;
 }
 
-Complex input_complex()
+ void input_complex(Complex *a,Complex *b)
 {
-    Complex c;
     printf("enter the real part");
-    scanf("%f",&c.real);
+    scanf("%f",a.real);
     printf("enter the imaginary part");
-    scanf("%f",&c.imaginary);
-    return c;
+    scanf("%f",a.imaginary);
+    printf("enter the real part");
+    scanf("%f",b.real);
+    printf("enter the imaginary part");
+    scanf("%f",b.imaginary);
 }
 
-Complex add_complex(Complex a, Complex b)
+ void add_complex(Complex a, Complex b , Complex *sum)
 {
-    Complex sum;
     sum.real=a.real+b.real;
     sum.imaginary=a.imaginary+b.imaginary;
-    return sum;
 }
 
 void output(Complex a, Complex b, Complex sum)
