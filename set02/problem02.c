@@ -28,16 +28,25 @@ int check_scalene(int a, int b, int c)
     {
         return 1;
     }
-    else{
-        return 0;
-    }   
+    else if(a==0 && b==0 && c==0)
+    {
+           return 0;
+    }
+    else
+    {
+        return -1;
+    }
 }
 
 void output(int a, int b, int c,int isscalene)
 {
-   if(1)
+   if(isscalene>0)
    {
     printf("the triangle is scalene");
+   }
+   else if(isscalene==0)
+   {
+    printf("this is not a triangle");
    }
    else
    {
