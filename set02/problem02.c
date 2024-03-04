@@ -1,11 +1,12 @@
 #include <stdio.h>
 int input_side();
-int check_scalene(int a, int b, int c);
-void output(int a, int b, int c, int isscalene);
+float check_scalene(float a, float b, float c);
+void output(float a, float b, float c , int isscalene);
 
 int main()
 {
-    int a , b , c , isscalene;
+    float a , b , c ; 
+    int isscalene;
     a=input_side();
     b=input_side();
     c=input_side();
@@ -22,7 +23,7 @@ int input_side()
     return n;
 }
 
-int check_scalene(int a, int b, int c)
+float check_scalene(float a, float b, float c)
 {
     if(a!=b && b!=c && a!=c)
     {
@@ -38,7 +39,7 @@ int check_scalene(int a, int b, int c)
     }
 }
 
-void output(int a, int b, int c,int isscalene)
+void output(float a, float b, float c, int isscalene)
 {
    if(isscalene>0)
    {
